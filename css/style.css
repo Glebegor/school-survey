@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+body{
+    margin: 0;
+    background-color: rgb(193, 226, 255);
+    font-family: 'PT Sans', sans-serif;
+}
+body h1{
+    background-color: white;
+    margin: 0px 0 0 0;
+    padding: 20px;
+}
+}
+#question{
+    margin: 10px 0 0 0;
+}
+#questionStyle{
+    background-color: white;
+    margin: 20px 0;
+}
+.nextQues_hide,
+.restartQues_hide,
+.question_hide{ display: none;}
+
+.restartQues_vis,
+.indicator_vis{ display: block;}
+.quesTitle{
+    background-color: rgb(193, 226, 255);
+    background-color: r;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 50px;
+}
+.quesResults{
+    margin: 0;
+}
+li{
+    border-top: 3px solid rgb(193, 226, 255);
+    padding: 10px 50px;
+}
+ul{
+    padding: 0;
+    list-style: none;    
+}
+#indicator{
+    margin-left: 20px;
+    font-size: 40px;
+}
+.FalseResult{
+
+    background-color: red;
+
+}
+.trueResult {
+    background-color: green;
+}
+label{
+    width: 100%;
+}
+.nextQues{
+    padding: 20px ;
+    width: 100%;
+}

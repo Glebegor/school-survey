@@ -46,7 +46,7 @@ const questionDATA = [
         answers: [
             {
                 id: '7',
-                value: 'Result 7',
+                value: 'Python',
                 correct: true,
             },
             {
@@ -131,7 +131,7 @@ const questionDATA = [
             {
                 id: '23',
                 value: 'Unreal Engine',
-                correct: True,
+                correct: true,
             }
             
         ]
@@ -207,6 +207,7 @@ const indicator = document.getElementById('indicator')
 const quizzz = document.getElementById('quiz')
 const restartQues = document.getElementById('restartQues')
 var score = 0
+
 const renderquiz = (index) => {
     renerInd(index + 1);
 
@@ -281,7 +282,7 @@ quiz.addEventListener('change', (event) => {
 });
 
 
-renderquiz(Number(question.dataset.currentStep))
+renderquiz(0)
 
 
 quiz.addEventListener('click', (event) => {
@@ -294,12 +295,12 @@ quiz.addEventListener('click', (event) => {
             restartQues.classList.add('restartQues_vis')
             indicator.classList.add('indicator_hide')
             question.classList.add('indicator_vis')
-            renderResult()
+            renderResult(nextQuesIndex)
         } else {
             renderquiz(nextQuesIndex); 
         }
         
-        nextQues.disabled = true
+        nextQues.disabled = false
     
     }
 
